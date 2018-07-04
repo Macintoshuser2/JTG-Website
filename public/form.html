@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Josh The Gamer - Suggestion Form</title>
+    <meta name="description" content="JTG-Website description">
+    <script src="config/validations.js"></script>
+    <script src="validate.js" async></script>
+  </head>
+  <body>
+    <app-header-layout>
+      <app-header fixed slot="header" shadow>
+        <app-toolbar>
+          <paper-icon-button id="toggle" icon="jtg-icons:menu" aria-label="Toggle Navigation"></paper-icon-button>
+          <img class="mac-icon" src="assets/icons/Mac.png" alt="" width="32" height="32">
+          <div main-title>Josh The Gamer</div>
+        </app-toolbar>
+      </app-header>
+      <app-drawer-layout id="drawerLayout">
+        <app-drawer slot="drawer" position="left" persistent opened>
+          <div class="drawer-content" role="navigation">
+            <div class="link-container">
+              <a href="index.html" title="Home">Home</a>
+            </div>
+            <div class="link-container">
+              <a href="progtut.html" title="Programming Tutorials">Programming Tutorials</a>
+            </div>
+            <div class="link-container">
+              <a href="webaccess.html" title="Web Accessibility Tips and Tricks">Web Accessibility</a>
+            </div>
+            <div class="link-container">
+              <a href="mcvids.html" title="Minecraft Videos">Minecraft Videos</a>
+            </div>
+            <div class="link-container">
+              <a href="mac.html" title="Mac Tips, Tricks and Tutorials">Mac Tutorials</a>
+            </div>
+            <div class="link-container">
+              <a href="winpc.html" title="Windows PC Tips, Tricks and Tutorials">Windows PC Tutorials</a>
+            </div>
+            <div class="link-container">
+              <a href="iosdev.html" title="iOS Development Tips, Tricks and Tutorials">iOS Development</a>
+            </div>
+            <div class="link-container">
+              <a href="androiddev.html" title="Android Development Tips, Tricks and Tutorials">Android Development</a>
+            </div>
+            <div class="link-container">
+              <a href="software.html" title="Software, API, and Mod Downloads">Software, APIs, Mods</a>
+            </div>
+            <div class="link-container">
+              <a href="form.html" title="Suggestion Form">Submit Your Feedback!</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Facebook">Josh's Facebook</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Instagram">Josh's Instagram</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's LinkedIn">Josh's LinkedIn</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Snapchat">Josh's Snapchat</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Twitter">Josh's Twitter</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's YouTube">Josh's YouTube</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="">Shop</a>
+            </div>
+          </div>
+        </app-drawer>
+        <div id="page-content">
+          <div id="form-container">
+            <iron-form id="formthing" allow-redirect>
+              <form method="POST" action="http://localhost:8080/form">
+                <fieldset>
+                  <legend>
+                    Basic Information
+                  </legend>
+                  <paper-input label="First Name (Required)" name="fname" id="fname"></paper-input>
+                  <span id="fnameError"></span>
+                  <paper-input label="Last Name (Required)" name="lname" id="lname"></paper-input>
+                  <span id="lnameError"></span>
+                  <paper-input label="Email (Required)" name="email" id="email"></paper-input>
+                  <span id="emailError"></span>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <legend>
+                    Place of Residence
+                  </legend>
+                  <paper-dropdown-menu name="country" label="Country (Required)" id="country">
+                    <paper-listbox slot="dropdown-content">
+                      <paper-item>Afghanistan</paper-item>
+                    	<paper-item>Åland Islands</paper-item>
+                    	<paper-item>Albania</paper-item>
+                    	<paper-item>Algeria</paper-item>
+                    	<paper-item>American Samoa</paper-item>
+                    	<paper-item>Andorra</paper-item>
+                    	<paper-item>Angola</paper-item>
+                    	<paper-item>Anguilla</paper-item>
+                    	<paper-item>Antarctica</paper-item>
+                    	<paper-item>Antigua and Barbuda</paper-item>
+                    	<paper-item>Argentina</paper-item>
+                    	<paper-item>Armenia</paper-item>
+                    	<paper-item>Aruba</paper-item>
+                    	<paper-item>Australia</paper-item>
+                    	<paper-item>Austria</paper-item>
+                    	<paper-item>Azerbaijan</paper-item>
+                    	<paper-item>Bahamas</paper-item>
+                    	<paper-item>Bahrain</paper-item>
+                    	<paper-item>Bangladesh</paper-item>
+                    	<paper-item>Barbados</paper-item>
+                    	<paper-item>Belarus</paper-item>
+                    	<paper-item>Belgium</paper-item>
+                    	<paper-item>Belize</paper-item>
+                    	<paper-item>Benin</paper-item>
+                    	<paper-item>Bermuda</paper-item>
+                    	<paper-item>Bhutan</paper-item>
+                    	<paper-item>Bolivia, Plurinational State of</paper-item>
+                    	<paper-item>Bonaire, Sint Eustatius and Saba</paper-item>
+                    	<paper-item>Bosnia and Herzegovina</paper-item>
+                    	<paper-item>Botswana</paper-item>
+                    	<paper-item>Bouvet Island</paper-item>
+                    	<paper-item>Brazil</paper-item>
+                    	<paper-item>British Indian Ocean Territory</paper-item>
+                    	<paper-item>Brunei Darussalam</paper-item>
+                    	<paper-item>Bulgaria</paper-item>
+                    	<paper-item>Burkina Faso</paper-item>
+                    	<paper-item>Burundi</paper-item>
+                    	<paper-item>Cambodia</paper-item>
+                    	<paper-item>Cameroon</paper-item>
+                    	<paper-item>Canada</paper-item>
+                    	<paper-item>Cape Verde</paper-item>
+                    	<paper-item>Cayman Islands</paper-item>
+                    	<paper-item>Central African Republic</paper-item>
+                    	<paper-item>Chad</paper-item>
+                    	<paper-item>Chile</paper-item>
+                    	<paper-item>China</paper-item>
+                    	<paper-item>Christmas Island</paper-item>
+                    	<paper-item>Cocos (Keeling) Islands</paper-item>
+                    	<paper-item>Colombia</paper-item>
+                    	<paper-item>Comoros</paper-item>
+                    	<paper-item>Congo</paper-item>
+                    	<paper-item>Congo, the Democratic Republic of the</paper-item>
+                    	<paper-item>Cook Islands</paper-item>
+                    	<paper-item>Costa Rica</paper-item>
+                    	<paper-item>Côte d'Ivoire</paper-item>
+                    	<paper-item>Croatia</paper-item>
+                    	<paper-item>Cuba</paper-item>
+                    	<paper-item>Curaçao</paper-item>
+                    	<paper-item>Cyprus</paper-item>
+                    	<paper-item>Czech Republic</paper-item>
+                    	<paper-item>Denmark</paper-item>
+                    	<paper-item>Djibouti</paper-item>
+                    	<paper-item>Dominica</paper-item>
+                    	<paper-item>Dominican Republic</paper-item>
+                    	<paper-item>Ecuador</paper-item>
+                    	<paper-item>Egypt</paper-item>
+                    	<paper-item>El Salvador</paper-item>
+                    	<paper-item>Equatorial Guinea</paper-item>
+                    	<paper-item>Eritrea</paper-item>
+                    	<paper-item>Estonia</paper-item>
+                    	<paper-item>Ethiopia</paper-item>
+                    	<paper-item>Falkland Islands (Malvinas)</paper-item>
+                    	<paper-item>Faroe Islands</paper-item>
+                    	<paper-item>Fiji</paper-item>
+                    	<paper-item>Finland</paper-item>
+                    	<paper-item>France</paper-item>
+                    	<paper-item>French Guiana</paper-item>
+                    	<paper-item>French Polynesia</paper-item>
+                    	<paper-item>French Southern Territories</paper-item>
+                    	<paper-item>Gabon</paper-item>
+                    	<paper-item>Gambia</paper-item>
+                    	<paper-item>Georgia</paper-item>
+                    	<paper-item>Germany</paper-item>
+                    	<paper-item>Ghana</paper-item>
+                    	<paper-item>Gibraltar</paper-item>
+                    	<paper-item>Greece</paper-item>
+                    	<paper-item>Greenland</paper-item>
+                    	<paper-item>Grenada</paper-item>
+                    	<paper-item>Guadeloupe</paper-item>
+                    	<paper-item>Guam</paper-item>
+                    	<paper-item>Guatemala</paper-item>
+                    	<paper-item>Guernsey</paper-item>
+                    	<paper-item>Guinea</paper-item>
+                    	<paper-item>Guinea-Bissau</paper-item>
+                    	<paper-item>Guyana</paper-item>
+                    	<paper-item>Haiti</paper-item>
+                    	<paper-item>Heard Island and McDonald Islands</paper-item>
+                    	<paper-item>Holy See (Vatican City State)</paper-item>
+                    	<paper-item>Honduras</paper-item>
+                    	<paper-item>Hong Kong</paper-item>
+                    	<paper-item>Hungary</paper-item>
+                    	<paper-item>Iceland</paper-item>
+                    	<paper-item>India</paper-item>
+                    	<paper-item>Indonesia</paper-item>
+                    	<paper-item>Iran, Islamic Republic of</paper-item>
+                    	<paper-item>Iraq</paper-item>
+                    	<paper-item>Ireland</paper-item>
+                    	<paper-item>Isle of Man</paper-item>
+                    	<paper-item>Israel</paper-item>
+                    	<paper-item>Italy</paper-item>
+                    	<paper-item>Jamaica</paper-item>
+                    	<paper-item>Japan</paper-item>
+                    	<paper-item>Jersey</paper-item>
+                    	<paper-item>Jordan</paper-item>
+                    	<paper-item>Kazakhstan</paper-item>
+                    	<paper-item>Kenya</paper-item>
+                    	<paper-item>Kiribati</paper-item>
+                    	<paper-item>Korea, Democratic People's Republic of</paper-item>
+                    	<paper-item>Korea, Republic of</paper-item>
+                    	<paper-item>Kuwait</paper-item>
+                    	<paper-item>Kyrgyzstan</paper-item>
+                    	<paper-item>Lao People's Democratic Republic</paper-item>
+                    	<paper-item>Latvia</paper-item>
+                    	<paper-item>Lebanon</paper-item>
+                    	<paper-item>Lesotho</paper-item>
+                    	<paper-item>Liberia</paper-item>
+                    	<paper-item>Libya</paper-item>
+                    	<paper-item>Liechtenstein</paper-item>
+                    	<paper-item>Lithuania</paper-item>
+                    	<paper-item>Luxembourg</paper-item>
+                    	<paper-item>Macao</paper-item>
+                    	<paper-item>Macedonia, the former Yugoslav Republic of</paper-item>
+                    	<paper-item>Madagascar</paper-item>
+                    	<paper-item>Malawi</paper-item>
+                    	<paper-item>Malaysia</paper-item>
+                    	<paper-item>Maldives</paper-item>
+                    	<paper-item>Mali</paper-item>
+                    	<paper-item>Malta</paper-item>
+                    	<paper-item>Marshall Islands</paper-item>
+                    	<paper-item>Martinique</paper-item>
+                    	<paper-item>Mauritania</paper-item>
+                    	<paper-item>Mauritius</paper-item>
+                    	<paper-item>Mayotte</paper-item>
+                    	<paper-item>Mexico</paper-item>
+                    	<paper-item>Micronesia, Federated States of</paper-item>
+                    	<paper-item>Moldova, Republic of</paper-item>
+                    	<paper-item>Monaco</paper-item>
+                    	<paper-item>Mongolia</paper-item>
+                    	<paper-item>Montenegro</paper-item>
+                    	<paper-item>Montserrat</paper-item>
+                    	<paper-item>Morocco</paper-item>
+                    	<paper-item>Mozambique</paper-item>
+                    	<paper-item>Myanmar</paper-item>
+                    	<paper-item>Namibia</paper-item>
+                    	<paper-item>Nauru</paper-item>
+                    	<paper-item>Nepal</paper-item>
+                    	<paper-item>Netherlands</paper-item>
+                    	<paper-item>New Caledonia</paper-item>
+                    	<paper-item>New Zealand</paper-item>
+                    	<paper-item>Nicaragua</paper-item>
+                    	<paper-item>Niger</paper-item>
+                    	<paper-item>Nigeria</paper-item>
+                    	<paper-item>Niue</paper-item>
+                    	<paper-item>Norfolk Island</paper-item>
+                    	<paper-item>Northern Mariana Islands</paper-item>
+                    	<paper-item>Norway</paper-item>
+                    	<paper-item>Oman</paper-item>
+                    	<paper-item>Pakistan</paper-item>
+                    	<paper-item>Palau</paper-item>
+                    	<paper-item>Palestinian Territory, Occupied</paper-item>
+                    	<paper-item>Panama</paper-item>
+                    	<paper-item>Papua New Guinea</paper-item>
+                    	<paper-item>Paraguay</paper-item>
+                    	<paper-item>Peru</paper-item>
+                    	<paper-item>Philippines</paper-item>
+                    	<paper-item>Pitcairn</paper-item>
+                    	<paper-item>Poland</paper-item>
+                    	<paper-item>Portugal</paper-item>
+                    	<paper-item>Puerto Rico</paper-item>
+                    	<paper-item>Qatar</paper-item>
+                    	<paper-item>Réunion</paper-item>
+                    	<paper-item>Romania</paper-item>
+                    	<paper-item>Russian Federation</paper-item>
+                    	<paper-item>Rwanda</paper-item>
+                    	<paper-item>Saint Barthélemy</paper-item>
+                    	<paper-item>Saint Helena, Ascension and Tristan da Cunha</paper-item>
+                    	<paper-item>Saint Kitts and Nevis</paper-item>
+                    	<paper-item>Saint Lucia</paper-item>
+                    	<paper-item>Saint Martin (French part)</paper-item>
+                    	<paper-item>Saint Pierre and Miquelon</paper-item>
+                    	<paper-item>Saint Vincent and the Grenadines</paper-item>
+                    	<paper-item>Samoa</paper-item>
+                    	<paper-item>San Marino</paper-item>
+                    	<paper-item>Sao Tome and Principe</paper-item>
+                    	<paper-item>Saudi Arabia</paper-item>
+                    	<paper-item>Senegal</paper-item>
+                    	<paper-item>Serbia</paper-item>
+                    	<paper-item>Seychelles</paper-item>
+                    	<paper-item>Sierra Leone</paper-item>
+                    	<paper-item>Singapore</paper-item>
+                    	<paper-item>Sint Maarten (Dutch part)</paper-item>
+                    	<paper-item>Slovakia</paper-item>
+                    	<paper-item>Slovenia</paper-item>
+                    	<paper-item>Solomon Islands</paper-item>
+                    	<paper-item>Somalia</paper-item>
+                    	<paper-item>South Africa</paper-item>
+                    	<paper-item>South Georgia and the South Sandwich Islands</paper-item>
+                    	<paper-item>South Sudan</paper-item>
+                    	<paper-item>Spain</paper-item>
+                    	<paper-item>Sri Lanka</paper-item>
+                    	<paper-item>Sudan</paper-item>
+                    	<paper-item>Suriname</paper-item>
+                    	<paper-item>Svalbard and Jan Mayen</paper-item>
+                    	<paper-item>Swaziland</paper-item>
+                    	<paper-item>Sweden</paper-item>
+                    	<paper-item>Switzerland</paper-item>
+                    	<paper-item>Syrian Arab Republic</paper-item>
+                    	<paper-item>Taiwan, Province of China</paper-item>
+                    	<paper-item>Tajikistan</paper-item>
+                    	<paper-item>Tanzania, United Republic of</paper-item>
+                    	<paper-item>Thailand</paper-item>
+                    	<paper-item>Timor-Leste</paper-item>
+                    	<paper-item>Togo</paper-item>
+                    	<paper-item>Tokelau</paper-item>
+                    	<paper-item>Tonga</paper-item>
+                    	<paper-item>Trinidad and Tobago</paper-item>
+                    	<paper-item>Tunisia</paper-item>
+                    	<paper-item>Turkey</paper-item>
+                    	<paper-item>Turkmenistan</paper-item>
+                    	<paper-item>Turks and Caicos Islands</paper-item>
+                    	<paper-item>Tuvalu</paper-item>
+                    	<paper-item>Uganda</paper-item>
+                    	<paper-item>Ukraine</paper-item>
+                    	<paper-item>United Arab Emirates</paper-item>
+                    	<paper-item>United Kingdom</paper-item>
+                    	<paper-item label="United States">United States</paper-item>
+                    	<paper-item>United States Minor Outlying Islands</paper-item>
+                    	<paper-item>Uruguay</paper-item>
+                    	<paper-item>Uzbekistan</paper-item>
+                    	<paper-item>Vanuatu</paper-item>
+                    	<paper-item>Venezuela, Bolivarian Republic of</paper-item>
+                    	<paper-item>Viet Nam</paper-item>
+                    	<paper-item>Virgin Islands, British</paper-item>
+                    	<paper-item>Virgin Islands, U.S.</paper-item>
+                    	<paper-item>Wallis and Futuna</paper-item>
+                    	<paper-item>Western Sahara</paper-item>
+                    	<paper-item>Yemen</paper-item>
+                    	<paper-item>Zambia</paper-item>
+                    	<paper-item>Zimbabwe</paper-item>
+                    </paper-listbox>
+                  </paper-dropdown-menu>
+                  <span id="countryError"></span>
+                </fieldset>
+								<br>
+                <fieldset>
+                  <legend>
+                    Suggestion
+                  </legend>
+                  <paper-input label="Enter Your Suggestion (Required)" id="suggestion" name="suggestion"></paper-input>
+                  <span id="suggestionError"></span>
+                </fieldset>
+                <br>
+                <paper-checkbox id="terms">I have read and agree to the <a href="terms.html" title="Terms of Use">Terms of Use of Data Entry</a></paper-checkbox>
+                <span id="termsError"></span>
+                <br>
+                <br>
+                <paper-button name="submit" id="submit" raised onclick="submitAndValidate();">Submit</paper-button>
+              </form>
+            </iron-form>
+					</div>
+        </div>
+      </app-drawer-layout>
+    </app-header-layout>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      window.onload = () => {
+        let drawerLayout = document.querySelector('#drawerLayout');
+
+        toggle.addEventListener('click', () => {
+          if(drawerLayout.forceNarrow || !drawerLayout.narrow) {
+            drawerLayout.forceNarrow = !drawerLayout.forceNarrow;
+          } else {
+            drawerLayout.drawer.toggle();
+          }
+        });
+
+        let styles = document.createElement('link');
+        styles.rel="stylesheet";
+        styles.href="/assets/stylesheets/styles.css";
+        styles.type="text/css";
+        document.body.append(styles);
+
+        let webCompPolyfill = document.createElement('script');
+        webCompPolyfill.src="/bower_components/webcomponentsjs/webcomponents-lite.js";
+        document.body.append(webCompPolyfill);
+
+        let importsScript = document.createElement('script');
+        importsScript.src="/script.js";
+        document.body.append(importsScript);
+      };
+    </script>
+  </body>
+</html>

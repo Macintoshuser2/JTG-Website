@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+}
+
+app-header {
+  background-color: darkgreen;
+  color: #fff;
+}
+
+app-header paper-icon-button {
+  --paper-icon-button-ink-color: #fff;
+}
+
+app-drawer-layout {
+  --app-drawer-layout-content-transition: margin 0.2s;
+}
+
+app-drawer {
+  --app-drawer-content-container_-_background0color: #eee;
+}
+
+paper-radio-button, paper-radio-group {
+  display: block;
+}
+
+paper-radio-button {
+  --paper-radio-button-checked-ink-color: green;
+  --paper-radio-button-checked-color: green;
+}
+
+paper-input {
+  --paper-input-container-color: gray;
+  --paper-input-container-focus-color: green;
+  --paper-input-container-input-color: darkgreen;
+}
+
+div.drawer-content > div > a {
+  color: black;
+  text-decoration: none;
+}
+
+div.link-container:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#tutorials-links {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 100%;
+  grid-gap: 20px;
+}
+
+#videos-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 100%;
+  grid-gap: 20px;
+}
+
+@media(max-width: 780px) {
+  #tutorials-links {
+    display: block;
+  }
+
+  #tutorials-links > div {
+    margin: 10px;
+  }
+}
+@media(max-width: 780px) {
+  #videos-container {
+    display: block;
+  }
+
+  #videos-container > div {
+    margin: 10px;
+  }
+}
+
+#tutorials-links > a > div {
+  padding: 13px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px gray;
+  height: auto;
+  background-color: rgb(218, 218, 218);
+}
+
+#tutorials-links > a > div > h2 {
+  font-family: "San Francisco";
+  text-align: center;
+}
+
+#tutorials-links > a {
+  text-decoration: none;
+  color: black;
+}
+
+#tutorials-links > a > div:hover {
+  background-color: rgb(185, 185, 185);
+}
+
+.drawer-content > div {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+span {
+  display: none;
+  color: red;
+  padding: 15px;
+  margin: 5px;
+}
+
+paper-dropdown-menu {
+  display: block;
+  width: 100%;
+}
+
+paper-button {
+  background-color: green;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.drawer-content {
+  margin-top: 80px;
+  height: calc(100% - 80px);
+  overflow: auto;
+}
+
+.mac-icon {
+  margin-left: 30px;
+  margin-right: 15px;
+  box-shadow: 2px 2px 15px black;
+}
+
+#page-content {
+  margin: 15px;
+  padding: 10px;
+}
+
+#form-container {
+  margin: 0 auto;
+  width: 70%;
+}

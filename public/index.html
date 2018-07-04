@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Josh The Gamer - Home</title>
+    <meta name="description" content="JTG-Website description">
+  </head>
+  <body>
+    <app-header-layout>
+      <app-header fixed effects="waterfall" slot="header" shadow>
+        <app-toolbar>
+          <paper-icon-button id="toggle" icon="jtg-icons:menu" aria-label="Toggle Navigation"></paper-icon-button>
+          <img class="mac-icon" src="assets/icons/Mac.png" alt="" width="32" height="32">
+          <div main-title>Josh The Gamer</div>
+        </app-toolbar>
+      </app-header>
+      <app-drawer-layout id="drawerLayout">
+        <app-drawer slot="drawer" position="left" persistent opened>
+          <div class="drawer-content" role="navigation">
+            <div>
+              <a href="#" title="">Home</a>
+            </div>
+            <div>
+              <a href="#" title="">Programming Tutorials</a>
+            </div>
+            <div>
+              <a href="#" title="">Web Accessibility</a>
+            </div>
+            <div>
+              <a href="#" title="">Minecraft Videos</a>
+            </div>
+            <div>
+              <a href="#" title="">Mac Tutorials</a>
+            </div>
+            <div>
+              <a href="#" title="">Windows PC Tutorials</a>
+            </div>
+            <div>
+              <a href="#" title="">iOS Development</a>
+            </div>
+            <div>
+              <a href="#" title="">Android Development</a>
+            </div>
+            <div>
+              <a href="#" title="">Software, APIs, Mods</a>
+            </div>
+            <div>
+              <a href="form.html" title="Suggestion Form">Submit Your Feedback!</a>
+            </div>
+            <div>
+              <a href="#" title="">Josh's Facebook</a>
+            </div>
+            <div>
+              <a href="#" title="">Josh's Instagram</a>
+            </div>
+            <div>
+              <a href="#" title="">Josh's LinkedIn</a>
+            </div>
+            <div>
+              <a href="#" title="">Josh's Snapchat</a>
+            </div>
+            <div>
+              <a href="#" title="">Josh's Twitter</a>
+            </div>
+            <div>
+              <a href="#" title="">Josh's Youtube</a>
+            </div>
+          </div>
+        </app-drawer>
+        <div id="page-content">
+          <!-- Content Here -->
+        </div>
+      </app-drawer-layout>
+    </app-header-layout>
+    <link rel="import" href="/bower_components/app-layout/app-drawer/app-drawer.html">
+    <link rel="import" href="/bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+    <link rel="import" href="/bower_components/app-layout/app-header/app-header.html">
+    <link rel="import" href="/bower_components/app-layout/app-header-layout/app-header-layout.html">
+    <link rel="import" href="/bower_components/app-layout/app-toolbar/app-toolbar.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/assets/iconsets/jtg-iconset.html">
+    <link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
+    <script>
+      let drawerLayout = document.querySelector('#drawerLayout');
+
+      toggle.addEventListener('click', () => {
+        if(drawerLayout.forceNarrow || !drawerLayout.narrow) {
+          drawerLayout.forceNarrow = !drawerLayout.forceNarrow;
+        } else {
+          drawerLayout.drawer.toggle();
+        }
+      })
+    </script>
+    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+  </body>
+</html>

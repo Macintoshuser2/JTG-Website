@@ -1,0 +1,6 @@
+{
+  "name": "JTG-Website",
+  "short_name": "JTG-Website",
+  "start_url": "/",
+  "display": "standalone"
+}
