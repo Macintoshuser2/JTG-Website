@@ -69,23 +69,28 @@ div.link-container:hover {
   grid-gap: 20px;
 }
 
-@media(max-width: 780px) {
-  #tutorials-links {
-    display: block;
-  }
-
-  #tutorials-links > div {
-    margin: 10px;
-  }
+table tr th {
+  background-color: green;
+  color: white;
+  padding: 10px;
 }
-@media(max-width: 780px) {
-  #videos-container {
-    display: block;
-  }
 
-  #videos-container > div {
-    margin: 10px;
-  }
+table tr td {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+table, tr, td, th {
+  border: 1px solid lightgray;
+}
+
+#mods-container, #apis-container, #software-container {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
 }
 
 #tutorials-links > a > div {

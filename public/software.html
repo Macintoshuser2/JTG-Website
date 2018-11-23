@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Josh The Gamer - Home</title>
+    <meta name="description" content="JTG-Website description">
+  </head>
+  <body>
+    <app-header-layout>
+      <app-header fixed effects="waterfall" slot="header" shadow>
+        <app-toolbar>
+          <paper-icon-button id="toggle" icon="jtg-icons:menu" aria-label="Toggle Navigation"></paper-icon-button>
+          <img class="mac-icon" src="assets/icons/Mac.png" alt="" width="32" height="32">
+          <div main-title>Josh The Gamer</div>
+        </app-toolbar>
+      </app-header>
+      <app-drawer-layout id="drawerLayout">
+        <app-drawer slot="drawer" position="left" persistent opened>
+          <div class="drawer-content" role="navigation">
+            <div class="link-container">
+              <a href="index.html" title="Home">Home</a>
+            </div>
+            <div class="link-container">
+              <a href="progtut.html" title="Programming Tutorials">Programming Tutorials</a>
+            </div>
+            <div class="link-container">
+              <a href="webaccess.html" title="Web Accessibility Tips and Tricks">Web Accessibility</a>
+            </div>
+            <div class="link-container">
+              <a href="mcvids.html" title="Minecraft Videos">Minecraft Videos</a>
+            </div>
+            <div class="link-container">
+              <a href="mac.html" title="Mac Tips, Tricks and Tutorials">Mac Tutorials</a>
+            </div>
+            <div class="link-container">
+              <a href="winpc.html" title="Windows PC Tips, Tricks and Tutorials">Windows PC Tutorials</a>
+            </div>
+            <div class="link-container">
+              <a href="iosdev.html" title="iOS Development Tips, Tricks and Tutorials">iOS Development</a>
+            </div>
+            <div class="link-container">
+              <a href="androiddev.html" title="Android Development Tips, Tricks and Tutorials">Android Development</a>
+            </div>
+            <div class="link-container">
+              <a href="software.html" title="Software, API, and Mod Downloads">Software, APIs, Mods</a>
+            </div>
+            <div class="link-container">
+              <a href="form.html" title="Suggestion Form">Submit Your Feedback!</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Facebook">Josh's Facebook</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Instagram">Josh's Instagram</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's LinkedIn">Josh's LinkedIn</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Snapchat">Josh's Snapchat</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's Twitter">Josh's Twitter</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Josh's YouTube">Josh's YouTube</a>
+            </div>
+            <div class="link-container">
+              <a href="gaming.html" title="Gaming Videos">Gaming Content</a>
+            </div>
+            <div class="link-container">
+              <a href="#" title="Shop">Shop</a>
+            </div>
+          </div>
+        </app-drawer>
+        <div id="page-content">
+          <div id="mods-container">
+            <div id="mods">
+              <h2 id="mods-heading">Mods by Josh the Gamer</h2>
+            </div>
+            <div id="mod-info">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Version</th>
+                  <th>Compat. Versions</th>
+                  <th>Download Current Ver.</th>
+                </tr>
+                <tr>
+                  <td>Mac's Utilities Remastered</td>
+                  <td>v1.0</td>
+                  <td>1.12.2</td>
+                  <td>LINK GOES HERE</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="apis-container">
+            <div id="api">
+              <h2 id="api-heading">APIs by Josh the Gamer</h2>
+            </div>
+            <div id="api-info">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Version</th>
+                  <th>Requirements</th>
+                  <th>Download Current Ver.</th>
+                </tr>
+                <tr>
+                  <td>Mac's Date and Time API</td>
+                  <td>v1.0</td>
+                  <td>Java 8</td>
+                  <td>LINK GOES HERE</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="software-container">
+            <div id="software">
+              <h2 id="software-heading">Software by Josh the Gamer</h2>
+            </div>
+            <div id="software-info">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Version</th>
+                  <th>System Requirments</th>
+                  <th>Download Current Ver.</th>
+                </tr>
+                <tr>
+                  <td>Inventory Manager</td>
+                  <td>v1.0</td>
+                  <td>Java 7 or above</td>
+                  <td>LINK GOES HERE</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </app-drawer-layout>
+    </app-header-layout>
+    <link rel="import" href="/bower_components/app-layout/app-drawer/app-drawer.html">
+    <link rel="import" href="/bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+    <link rel="import" href="/bower_components/app-layout/app-header/app-header.html">
+    <link rel="import" href="/bower_components/app-layout/app-header-layout/app-header-layout.html">
+    <link rel="import" href="/bower_components/app-layout/app-toolbar/app-toolbar.html">
+    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/assets/iconsets/jtg-iconset.html">
+    <link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
+    <script>
+      let drawerLayout = document.querySelector('#drawerLayout');
+
+      toggle.addEventListener('click', () => {
+        if(drawerLayout.forceNarrow || !drawerLayout.narrow) {
+          drawerLayout.forceNarrow = !drawerLayout.forceNarrow;
+        } else {
+          drawerLayout.drawer.toggle();
+        }
+      })
+    </script>
+    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+  </body>
+</html>
