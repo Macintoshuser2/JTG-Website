@@ -22,6 +22,7 @@ var submitAndValidate = () => {
       formValid = true;
     }
   }
+  
   if(formValid) {
     try {
       $.ajax({

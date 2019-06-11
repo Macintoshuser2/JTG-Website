@@ -1,91 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <title>Twisted Creeper Gaming - Home</title>
-    <meta name="description" content="JTG-Website description">
-  </head>
-  <body>
-    <app-header-layout>
-      <app-header fixed effects="waterfall" slot="header" shadow>
-        <app-toolbar>
-          <paper-icon-button id="toggle" icon="jtg-icons:menu" aria-label="Toggle Navigation"></paper-icon-button>
-          <img class="mac-icon" src="assets/icons/Mac.png" alt="" width="32" height="32">
-          <div main-title>Twisted Creeper Gaming</div>
-        </app-toolbar>
-      </app-header>
-      <app-drawer-layout id="drawerLayout">
-        <app-drawer slot="drawer" position="left" persistent opened>
-          <div class="drawer-content" role="navigation">
-            <div class="link-container">
-              <a href="index.html" title="Home">Home</a>
-            </div>
-            <div class="link-container">
-              <a href="progtut.html" title="Programming Tutorials">Programming Tutorials</a>
-            </div>
-            <div class="link-container">
-              <a href="webaccess.html" title="Web Accessibility Tips and Tricks">Web Accessibility Tips and Tricks</a>
-            </div>
-            <div class="link-container">
-              <a href="mcvids.html" title="Minecraft Videos">Minecraft Videos</a>
-            </div>
-            <div class="link-container">
-              <a href="software.html" title="Software, API, and Mod Downloads">Software, APIs, Mods</a>
-            </div>
-            <div class="link-container">
-              <a href="form.html" title="Suggestion Form">Submit Your Feedback!</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Facebook">Josh's Facebook</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Instagram">Josh's Instagram</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's LinkedIn">Josh's LinkedIn</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Snapchat">Josh's Snapchat</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Twitter">Josh's Twitter</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's YouTube">Josh's YouTube</a>
-            </div>
-            <div class="link-container">
-              <a href="gaming.html" title="Gaming Videos">Gaming Content</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Shop">Shop</a>
-            </div>
-          </div>
-        </app-drawer>
-        <div id="page-content">
-          <!-- Content Here -->
-        </div>
-      </app-drawer-layout>
-    </app-header-layout>
-    <link rel="import" href="/bower_components/app-layout/app-drawer/app-drawer.html">
-    <link rel="import" href="/bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
-    <link rel="import" href="/bower_components/app-layout/app-header/app-header.html">
-    <link rel="import" href="/bower_components/app-layout/app-header-layout/app-header-layout.html">
-    <link rel="import" href="/bower_components/app-layout/app-toolbar/app-toolbar.html">
-    <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
-    <link rel="import" href="/assets/iconsets/jtg-iconset.html">
-    <link rel="stylesheet" href="/assets/stylesheets/styles.css" type="text/css">
-    <script>
-      let drawerLayout = document.querySelector('#drawerLayout');
 
-      toggle.addEventListener('click', () => {
-        if(drawerLayout.forceNarrow || !drawerLayout.narrow) {
-          drawerLayout.forceNarrow = !drawerLayout.forceNarrow;
-        } else {
-          drawerLayout.drawer.toggle();
-        }
-      })
-    </script>
-    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-  </body>
+<head>
+  <meta name="Description" content="The official site for everything Twisted Creeper Gaming" />
+  <meta name="Keywords" content="Twisted Creeper Gaming, Josh The Gamer, Mac and Death, Minecraft with Mac" />
+  <meta name="copyright" content="Twisted Creeper Gaming">
+  <meta name="author" content="Josh Root, josh.root822@gmail.com">
+  <meta name="designer" content="Josh Root">
+  <meta name="owner" content="Josh Root">
+
+  <meta name="og:title" content="Twisted Creeper Gaming" />
+  <meta name="og:type" content="YouTube Channel" />
+  <meta name="og:site_name" content="Twisted Creeper Gaming Official Website" />
+  <meta name="og:description" content="The official site for everything Twisted Creeper Gaming" />
+  <meta name="og:locality" content="Lincoln" />
+  <meta name="og:region" content="NE" />
+  <meta name="og:country-name" content="USA" />
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Twisted Creeper Gaming - Home</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h6 class="sr-only">Twisted Creeper Gaming</h6>
+    </header>
+    <a href="#main" class="sr-only">Skip to Main Content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTutorials" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Tutorials</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownTutorials">
+            <a class="dropdown-item cs" href="#">Java (Coming 2020</a>
+            <a class="dropdown-item cs" href="#">HTML (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">CSS (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">Vanilla JavaScript (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">Node.js and NPM (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">C++ (Coming 2020)</a>
+            <a class="dropdown-item" href="quorum.html">Quorum</a>
+            <a class="dropdown-item" href="quorum.html#gamedev">Quorum Game Development</a>
+            <a class="dropdown-item cs" href="#">Python (Coming 2020)</a>
+            <a class="dropdown-item cs" href="#">SQL (Coming 2020)</a>
+            <a class="dropdown-item" href="csharp.html">C# (In Progress)</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaming" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Gaming Videos</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownGaming">
+            <a class="dropdown-item" href="macanddeath.html">Minecraft - Mac and Death Survival (Two Idiots Trying to Survive</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="apps.html">Apps</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMods" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Mods</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMods">
+            <a class="dropdown-item" href="macutil.html">Mac&rsquo;s&nbsp;Utilities Mod</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSocialMedia" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Social Media</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownSocialMedia">
+            <a class="dropdown-item" href="#">Facebook</a>
+            <a class="dropdown-item" href="#">Instagram</a>
+            <a class="dropdown-item" href="#">LinkedIn</a>
+            <a class="dropdown-item" href="#">Snapchat</a>
+            <a class="dropdown-item" href="#">GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="content">
+      <main id="main">
+        <h1>Welcome to the offical website for Twisted Creeper Gaming</h1>
+        <p>
+          Here you will find all of the content from my YouTube channel as well as many other things ranging from programming tutorials
+          to Redstone tutorials to vlogs to Mods and Software of my own creation that I will be releasing to all of you!
+        </p>
+        <h2>Programming Tutorials</h2>
+        <p>
+          Here you will find many different tutorials for a wide variety of programming languages. These languages are, but no limited
+          to:
+        </p>
+        <ul>
+          <li>
+            <a href="java.html">Java (Coming 2020)</a>
+          </li>
+          <li>
+            <a href="html.html">HTML5 (Coming Soon)</a>
+          </li>
+          <li>
+            <a href="css.html">CSS (Coming Soon)</a>
+          </li>
+          <li>
+            <a href="js.html">Vanilla JavaScript (Coming Soon)</a>
+          </li>
+          <li>
+            <li>
+              <a href="node.html">Node.js and NPM (Coming Soon)</a>
+            </li>
+            <li>
+              <a href="cpp.html">C++ (Coming 2020)</a>
+            </li>
+            <li>
+              <a href="quorum.html">Quorum</a>
+            </li>
+            <li>
+              <a href="quorum.html#gamedev">Quorum Game Development</a>
+            </li>
+            <li>
+              <a href="python.html">Python (Coming 2020)</a>
+            </li>
+            <li>
+              <a href="sql.html">SQL (Coming 2020)</a>
+            </li>
+            <li>
+              <a href="csharp.html">C#</a>
+            </li>
+        </ul>
+        <h2>Desktop Applications</h2>
+        <p>
+          On this site, I offer a variety of different pieces of software. The vast majority of them are made using Java 8, so they
+          will be compatible with most computers out there. I also provide software that will work only on Mac or only on
+          Windows. These pieces of software can range from things that can help you keep organized to things that can help
+          you generate repetitive pieces of code that will save you time in development.
+        </p>
+        <h2>Gaming Content</h2>
+        <p>
+          We've also got a variety of gaming video content. This includes games like Minecraft, Team Fortress 2, Portal, Portal 2,
+          Fortnite, and many others.
+        </p>
+        <h2>Minecraft Mods</h2>
+        <p>
+          Here you can also download Minecraft mods of my own creation. These range from utility mods to decoration mods.
+        </p>
+      </main>
+    </div>
+    <footer>
+      <div class="bg-dark">
+        Copyright &copy; 2019 Josh "Mac" Root All Rights Reserved.
+        <br> For Business, Website, and Collaboration Inquiries, email me at
+        <a href="mailto:tcgbusiness@gmail.com">tcgbusiness@gmail.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

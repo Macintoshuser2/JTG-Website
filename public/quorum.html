@@ -1,269 +1,312 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <title>Twisted Creeper Gaming - Quorum Programming Tutorials</title>
-    <meta name="description" content="TCG-Website description">
-  </head>
-  <body>
-    <app-header-layout>
-      <app-header fixed slot="header" shadow>
-        <app-toolbar>
-          <paper-icon-button id="toggle" icon="jtg-icons:menu" aria-label="Toggle Navigation"></paper-icon-button>
-          <img class="mac-icon" src="assets/icons/Mac.png" alt="" width="32" height="32">
-          <div main-title>Josh The Gamer</div>
-        </app-toolbar>
-      </app-header>
-      <app-drawer-layout id="drawerLayout">
-        <app-drawer slot="drawer" position="left" persistent opened>
-          <div class="drawer-content" role="navigation">
-            <div class="link-container">
-              <a href="index.html" title="Home">Home</a>
-            </div>
-            <div class="link-container">
-              <a href="progtut.html" title="Programming Tutorials">Programming Tutorials</a>
-            </div>
-            <div class="link-container">
-              <a href="webaccess.html" title="Web Accessibility Tips and Tricks">Web Accessibility Tips and Tricks</a>
-            </div>
-            <div class="link-container">
-              <a href="mcvids.html" title="Minecraft Videos">Minecraft Videos</a>
-            </div>
-            <div class="link-container">
-              <a href="software.html" title="Software, API, and Mod Downloads">Software, APIs, Mods</a>
-            </div>
-            <div class="link-container">
-              <a href="form.html" title="Suggestion Form">Submit Your Feedback!</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Facebook">Josh's Facebook</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Instagram">Josh's Instagram</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's LinkedIn">Josh's LinkedIn</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Snapchat">Josh's Snapchat</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's Twitter">Josh's Twitter</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Josh's YouTube">Josh's YouTube</a>
-            </div>
-            <div class="link-container">
-              <a href="gaming.html" title="Gaming Videos">Gaming Content</a>
-            </div>
-            <div class="link-container">
-              <a href="#" title="Shop">Shop</a>
-            </div>
+
+<head>
+  <!-- Meta data for making the site Search Engine Optimized (SEO) -->
+  <meta name="Description" content="The official site for everything Twisted Creeper Gaming" />
+  <meta name="Keywords" content="Twisted Creeper Gaming, Josh The Gamer, Mac and Death, Minecraft with Mac" />
+  <meta name="copyright" content="Twisted Creeper Gaming">
+  <meta name="author" content="Josh Root, josh.root822@gmail.com">
+  <meta name="designer" content="Josh Root">
+  <meta name="owner" content="Josh Root">
+
+  <!-- Meta data for Facebook OpenGraph -->
+  <meta name="og:title" content="Twisted Creeper Gaming" />
+  <meta name="og:type" content="YouTube Channel" />
+  <meta name="og:site_name" content="Twisted Creeper Gaming Official Website" />
+  <meta name="og:description" content="The official site for everything Twisted Creeper Gaming" />
+  <meta name="og:locality" content="Lincoln" />
+  <meta name="og:region" content="NE" />
+  <meta name="og:country-name" content="USA" />
+
+  <!-- Meta data to make the page responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Twisted Creeper Gaming - Quorum Tutorials</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h6 class="sr-only">Twisted Creeper Gaming</h6>
+    </header>
+    <a href="#main" class="sr-only">Skip to Main Content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTutorials" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Tutorials</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownTutorials">
+            <a class="dropdown-item cs" href="#">Java (Coming 2020</a>
+            <a class="dropdown-item cs" href="#">HTML (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">CSS (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">Vanilla JavaScript (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">Node.js and NPM (Coming Soon)</a>
+            <a class="dropdown-item cs" href="#">C++ (Coming 2020)</a>
+            <a class="dropdown-item" href="quorum.html">Quorum</a>
+            <a class="dropdown-item" href="quorum.html#gamedev">Quorum Game Development</a>
+            <a class="dropdown-item cs" href="#">Python (Coming 2020)</a>
+            <a class="dropdown-item cs" href="#">SQL (Coming 2020)</a>
+            <a class="dropdown-item" href="csharp.html">C# (In Progress)</a>
           </div>
-        </app-drawer>
-        <div id="page-content">
-          <h3>Quorum Programming Language</h3>
-          <div id="videos-container" class="prog-tuts">
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGaming" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Gaming Videos</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownGaming">
+            <a class="dropdown-item" href="macanddeath.html">Minecraft - Mac and Death Survival (Two Idiots Trying to Survive</a>
+            <a class="dropdown-item" href="mcwithmac.html">Minecraft - Minecraft With Mac 1.13.2</a>
           </div>
-          <br>
-          <br>
-          <h3>Quorum Game Development Tutorials</h3>
-          <div id="videos-container" class="game-tuts">
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
-            <div class="video-container"></div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="apps.html">Apps</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMods" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Mods</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMods">
+            <a class="dropdown-item" href="macutil.html">Mac&rsquo;s&nbsp;Utilities Mod</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSocialMedia" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Social Media</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownSocialMedia">
+            <a class="dropdown-item" href="#">Facebook</a>
+            <a class="dropdown-item" href="#">Instagram</a>
+            <a class="dropdown-item" href="#">LinkedIn</a>
+            <a class="dropdown-item" href="#">Snapchat</a>
+            <a class="dropdown-item" href="#">GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="content">
+      <main id="main">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              Quorum Programming Language
+            </h2>
+          </div>
+          <div class="card-body">
+            Tutorials for the Quorum Programming Language
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=A-zn2AKY2NA&t=0s">Quroum Programming Language - #1 - Variables</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=rCH7rH7Qr0U">Quorum Programming Language - #2 - Concatination</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=XGRBNdRO-Ao">Quorum Programming Language - #3 - Mathematical Operators</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ohFVXwwK3aY">Quorum Programming Language - #4 - Modulus</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=eQ7WC_fJNl0">Quorum Programming Language - #5 - Getting User Input</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=5QJiBI_fgDQ">Quorum Programming Language - #6 - Casting</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=Y5B2-TzCSUk">Quorum Programming Language - #7 - Conditionals</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=NQXVUQn_x88&t=1s">Quorum Programming Language - #8 - Object Oriends Programming and how Quorum handles objects</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=2hUK-ADrs34">Quorum Programming Language - #9 - Lexical Scoping</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=N9_GZzixpMY">Quorum Programming Language - #10 - Looping</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=NkMhGewTLMI">Quorum Programming Language - #11 - Random Class</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=kPSpwZ3uQPM">Quorum Programming Language - #12 - DateTime Class</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=8ed52f1-jR0">Quorum Programming Language - #13 - Actions</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=j5QIeWk9DwE">Quorum Programming Language - #14 - Classes</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=_BXG-e21LqI">Quorum Programming Language - #15 - Using Access Modifiers</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=babGRxZc1_g">Quorum Programming Language - #16 - Constructors</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=OlgpXAhf5nY">Quorum Programming Language - #17 - Inheritance</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=M36vqZtcO14">Quorum Programming Language - #18 - Polymorphism</a>
+              </li>
+            </ul>
+            <br>
+            <a href="https://www.youtube.com/watch?v=A-zn2AKY2NA&list=PLuw8_F_SfjQag-B0IX6jMcPbHkOBh_9iA" target="_blank">Full Playlist on YouTube</a>
           </div>
         </div>
-      </app-drawer-layout>
-    </app-header-layout>
-    <script>
-      window.onload = () => {
-        let drawerLayout = document.querySelector('#drawerLayout');
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              Quorum Game Development
+            </h2>
+          </div>
+          <div class="card-body" id="gamedev">
+            Tutorials for the Quorum Game Development
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=2tWAv2ejNdc">Quorum Game Development #1 - Understanding Frames</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=xU5fTVPcpNE">Quorum Game Development #2 - Understanding a Game Loop</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=og1eVOdGMns">Quorum Game Development #3 - Anatomy of a Quorum Game Class</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=yY67qV1HaQs">Quorum Game Development #4 - Drawing 2D Shapes - Circles, Squares, Triangles, Oh My!</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=yUhf7SX1LDA">Quorum Game Development #5 - Drawing Images</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=JmvK-0KOO7I">Quorum Game Development #6 - ImageSheets</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=5DpvZ_ErCS4">Quorum Game Development #7 - Moving Objects Around the Screen</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=4_v644BR-04">Quorum Game Development #8 - Rotating Objects</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=nxKHQ9QqgwU">Quorum Game Development #9 - Flipping Objects</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=YljGSqvqA48">Quorum Game Development #10 - Scaling Objects</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=8KOdWEKLli4">Quorum Game Development #11 - Animating Objects</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=8295acICIrg">Quorum Game Development #12 - Using Audio</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=4WO20v1dYQs">Quorum Game Development #13 - Handling User Input With Input Polling</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=Q1MEMSrBwVg">Quorum Game Development #14 - Handling Keyboard Input With Event Handling</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=8UXHeixK0rY">Quorum Game Development #15 - Getting Mouse Input Using Event Handling</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=TVv_EK_O-YM">Quorum Game Development #16 - Collision Dµµetection</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=g5g5KfE99Mk">Quorum Game Development #17 - Vectors</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=A2MZ7wMqVv4">Quorum Game Development #18 - Physics - Gravity</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=W64doIKH39U">Quorum Game Development #19 - Physics - Mass</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ZE0uWJfdkJY">Quorum Game Development #20 - Physics - Density</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=SrfHd4Myc7c">Quorum Game Development #21 - Physics - Friction</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=jtCWiBK_x_M">Quorum Game Development #22 - Physics - Restitution</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ViuRcivxvhE">Quorum Game Development #23 - Physics - Linear Velocity</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=4k8N1JSvOeQ">Quorum Game Development #24 - Physics - Angular Velocity</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ZMPPPChtho0">Quorum Game Development #25 - Physics - Force</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=lXUq4ufMiwk">Quorum Game Development #26 - Physics - Torque</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=5uKC0ewBebU">Quorum Game Development #27 - Physics - Linear Damping</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=WVWXPwbGhPQ">Quorum Game Development #28 - Physics - Angular Damping</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ulICAYG31v4">Quorum Game Development #29 - Physics - Joints - Distance Joint, Weld Joint, Rope Joint</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=jlBHihgdFFI">Quorum Game Development #30 - Introduction to 3D Games in Quorum</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=nXZTgeEIhtw">Quorum Game Development #31 - Drawing in 3D</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=nts41e4TS2U">Quorum Game Development #32 - Using Custom 3D Models</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=c4PRjmu1-5M">Quorum Game Development #33 - Camera</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=2oSTcIC96L0">Quorum Game Development #34 - Lighting</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=_j26rUsn4ko">Quorum Game Development #35 - Scaling And Rotation of 3D Objects</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=G33wRlOPgxc">Quorum Game Development #36 - Gravity in 3D</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=1Am-W_NENXQ">Quorum Game Development #37 - Angular Velocity, Linear Velocity and Torque in 3D</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=AzMvmHOYRAE">Quorum Game Development #38 - Restitution in 3D</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=5uFOyTUoNJM">Quorum Game Development #39 - Force and Friction in 3D</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=gpypzXI_j4k">Quorum Game Development #40 - Mass and Density in 3D</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="bg-dark">
+        Copyright &copy; 2019 Josh "Mac" Root All Rights Reserved.
+        <br> For Business and Collaboration Inquiries, email me at
+        <a href="mailto:tcgbusiness@gmail.com">tcgbusiness@gmail.com</a>
+      </div>
+    </footer>
+  </div>
 
-        toggle.addEventListener('click', () => {
-          if(drawerLayout.forceNarrow || !drawerLayout.narrow) {
-            drawerLayout.forceNarrow = !drawerLayout.forceNarrow;
-          } else {
-            drawerLayout.drawer.toggle();
-          }
-        });
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" type="text/css">
 
-        let styles = document.createElement('link');
-        styles.rel="stylesheet";
-        styles.href="/assets/stylesheets/styles.css";
-        styles.type="text/css";
-        document.body.append(styles);
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
 
-        let webCompPolyfill = document.createElement('script');
-        webCompPolyfill.src="/bower_components/webcomponentsjs/webcomponents-lite.js";
-        document.body.append(webCompPolyfill);
-
-        let appDrawer = document.createElement('link');
-        appDrawer.rel="import";
-        appDrawer.href="/bower_components/app-layout/app-drawer/app-drawer.html";
-        document.body.append(appDrawer);
-
-        let appDrawerLayout = document.createElement('link');
-        appDrawerLayout.rel="import";
-        appDrawerLayout.href="/bower_components/app-layout/app-drawer-layout/app-drawer-layout.html";
-        document.body.append(appDrawerLayout);
-
-        let appHeader = document.createElement('link');
-        appHeader.rel="import";
-        appHeader.href="/bower_components/app-layout/app-header/app-header.html";
-        document.body.append(appHeader);
-
-        let appHeaderLayout = document.createElement('link');
-        appHeaderLayout.rel="import";
-        appHeaderLayout.href="/bower_components/app-layout/app-header-layout/app-header-layout.html";
-        document.body.append(appHeaderLayout);
-
-        let appToolbar = document.createElement('link');
-        appToolbar.rel="import";
-        appToolbar.href="/bower_components/app-layout/app-toolbar/app-toolbar.html";
-        document.body.append(appToolbar);
-
-        let paperIconButton = document.createElement('link');
-        paperIconButton.rel="import";
-        paperIconButton.href="/bower_components/paper-icon-button/paper-icon-button.html";
-        document.body.append(paperIconButton);
-
-        let jtgIconset = document.createElement('link');
-        jtgIconset.rel="import";
-        jtgIconset.href="/assets/iconsets/jtg-iconset.html";
-        document.body.append(jtgIconset);
-
-        let inlineFrameProgTutURLs =
-        [
-          'https://www.youtube.com/embed/A-zn2AKY2NA',
-          'https://www.youtube.com/embed/rCH7rH7Qr0U',
-          'https://www.youtube.com/embed/XGRBNdRO-Ao',
-          'https://www.youtube.com/embed/ohFVXwwK3aY',
-          'https://www.youtube.com/embed/eQ7WC_fJNl0',
-          'https://www.youtube.com/embed/5QJiBI_fgDQ',
-          'https://www.youtube.com/embed/Y5B2-TzCSUk',
-          'https://www.youtube.com/embed/NQXVUQn_x88',
-          'https://www.youtube.com/embed/2hUK-ADrs34',
-          'https://www.youtube.com/embed/N9_GZzixpMY',
-          'https://www.youtube.com/embed/NkMhGewTLMI',
-          'https://www.youtube.com/embed/kPSpwZ3uQPM',
-          'https://www.youtube.com/embed/8ed52f1-jR0',
-          'https://www.youtube.com/embed/j5QIeWk9DwE',
-          'https://www.youtube.com/embed/_BXG-e21LqI',
-          'https://www.youtube.com/embed/babGRxZc1_g',
-          'https://www.youtube.com/embed/OlgpXAhf5nY',
-          'https://www.youtube.com/embed/M36vqZtcO14'
-        ];
-
-        let inlineFrameGameTutURLs =
-        [
-          'https://www.youtube.com/embed/2tWAv2ejNdc',
-          'https://www.youtube.com/embed/xU5fTVPcpNE',
-          'https://www.youtube.com/embed/og1eVOdGMns',
-          'https://www.youtube.com/embed/yY67qV1HaQs',
-          'https://www.youtube.com/embed/yUhf7SX1LDA',
-          'https://www.youtube.com/embed/JmvK-0KOO7I',
-          'https://www.youtube.com/embed/5DpvZ_ErCS4',
-          'https://www.youtube.com/embed/4_v644BR-04',
-          'https://www.youtube.com/embed/nxKHQ9QqgwU',
-          'https://www.youtube.com/embed/YljGSqvqA48',
-          'https://www.youtube.com/embed/8KOdWEKLli4',
-          'https://www.youtube.com/embed/8295acICIrg',
-          'https://www.youtube.com/embed/4WO20v1dYQs',
-          'https://www.youtube.com/embed/Q1MEMSrBwVg',
-          'https://www.youtube.com/embed/8UXHeixK0rY',
-          'https://www.youtube.com/embed/TVv_EK_O-YM',
-          'https://www.youtube.com/embed/g5g5KfE99Mk',
-          'https://www.youtube.com/embed/A2MZ7wMqVv4',
-          'https://www.youtube.com/embed/W64doIKH39U',
-          'https://www.youtube.com/embed/ZE0uWJfdkJY',
-          'https://www.youtube.com/embed/SrfHd4Myc7c',
-          'https://www.youtube.com/embed/jtCWiBK_x_M',
-          'https://www.youtube.com/embed/ViuRcivxvhE',
-          'https://www.youtube.com/embed/4k8N1JSvOeQ',
-          'https://www.youtube.com/embed/ZMPPPChtho0',
-          'https://www.youtube.com/embed/lXUq4ufMiwk',
-          'https://www.youtube.com/embed/5uKC0ewBebU',
-          'https://www.youtube.com/embed/WVWXPwbGhPQ',
-          'https://www.youtube.com/embed/ulICAYG31v4',
-          'https://www.youtube.com/embed/jlBHihgdFFI',
-          'https://www.youtube.com/embed/nXZTgeEIhtw',
-          'https://www.youtube.com/embed/nts41e4TS2U'
-        ];
-
-        let elementsProg = document.querySelectorAll(".prog-tuts > .video-container");
-        let elementsGame = document.querySelectorAll(".game-tuts > .video-container");
-
-        Array.from(elementsProg).forEach((element, index, array) => {
-          var e = document.createElement('iframe');
-          e.src = inlineFrameProgTutURLs[index];
-          e.width = 460;
-          e.height = 215;
-          e.frameborder = 0;
-          e.allow = "autoplay; encrypted-media"
-          e.setAttribute("allowfullscreen", true);
-          element.append(e);
-        });
-
-        Array.from(elementsGame).forEach((element, index, array) => {
-          var e = document.createElement('iframe');
-          e.src = inlineFrameGameTutURLs[index];
-          e.width = 460;
-          e.height = 215;
-          e.frameborder = 0;
-          e.allow = "autoplay; encrypted-media";
-          e.setAttribute("allowfullscreen", true);
-          element.append(e);
-        });
-      };
-    </script>
-  </body>
 </html>
