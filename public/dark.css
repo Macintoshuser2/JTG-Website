@@ -52,6 +52,7 @@ table tr td input {
 
 div.card {
   display: block;
+  background-color: black;
 }
 
 #content {
@@ -96,8 +97,4 @@ div.card div.card-body {
 div.card div.card-header {
   background-color: rgb(58, 58, 58);
   color: white;
-}
-
-div.card {
-  background-color: black;
 }
