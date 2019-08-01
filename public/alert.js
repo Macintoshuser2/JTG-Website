@@ -6,13 +6,13 @@ const doc = self.document;
     let comingSoonElements = doc.getElementsByClassName("cs");
 
     Array.from(inaccessibleElements).forEach(function (element, index, array) {
-        element.addEventListener('click', function () {
+        element.addEventListener('click', function() {
             alert("Coming Soon!");
         });
     });
 
     Array.from(comingSoonElements).forEach(function (element, index, array) {
-        element.addEventListener('click', function () {
+        element.addEventListener('click', function() {
             alert("Coming Soon!");
         });
     });

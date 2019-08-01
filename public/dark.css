@@ -6,7 +6,8 @@ body {
 #wrapper {
     width: 80%;
     margin: 0 auto;
-    background: linear-gradient(white, rgb(222, 222, 222));
+    background: linear-gradient(black, rgb(31, 31, 31));
+    color: white;
 }
 
 label.col-form-label-sm {
@@ -31,7 +32,7 @@ em {
   width: 200px;
   height: 200px;
   border-radius: 270px;
-  border: 2px solid black;
+  border: 2px solid white;
   margin: 0 auto;
 }
 
@@ -86,4 +87,17 @@ footer a:active {
 
 footer a:visited {
   color: lightgreen;
+}
+
+div.card div.card-body {
+  background-color: rgb(48, 48, 48);
+}
+
+div.card div.card-header {
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+div.card {
+  background-color: black;
 }
